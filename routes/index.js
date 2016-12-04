@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+function Title(x){ return x + ' | AllCAD' };
 var base_title = ' | AllCAD'
 var pages = {           /*   Titles   */            /*   URLs   */            /*   Template Names   */
   "home":               {"title":'Home',            "url":'/',                "template":'home'},
@@ -11,13 +12,18 @@ var pages = {           /*   Titles   */            /*   URLs   */            /*
   "jobs":               {"title":'Jobs',            "url":'/jobs',            "template":'jobs'},
 }
 
+/* GET Home Page */
+router.get('/', function(req, res, next) {
+  res.render('home', { title: Title('Home') });
+});
+
 /* GET main pages */
 router.get('/:pg_str', function(req, res, next) {
   var pg_str = req.params['pg_str'];
   if(pages[pg_str]){
-    res.render(pages[pg_str].template, { title: pages[pg_str].title + base_title });
+    res.render(pages[pg_str].template, { title: Title(pages[pg_str].title) });
   }else{
-    res.render('error', { title: 'Page Not Found' + base_title });
+    res.render('error', { title: Title('Page Not Found') });
   }
 });
 

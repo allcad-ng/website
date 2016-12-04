@@ -8,52 +8,53 @@ html
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
     block head
   body
-    nav.aa-header.navbar.navbar-default
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#hh-navbar-collapse', aria-expanded='false')
-            span.sr-only= Toggle navigation              
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#')
-      .container-fluid
-        .row.aa-body
-          .col-md-10.col-md-offset-1
-            block content
-        .row.aa-footer
-          .col-md-10.col-md-offset-1
-            .col-xs-3.aa-footer-col
-              .aa-footer-logo
-                img(src='')
-              p.aa-copyright= 
-            .col-xs-3.aa-footer-col
-              .aa-footer-col-head= Company
-              ul.aa-footer-list
-                li
-                  a= Press
-                li
-                  a= Contact
-                li
-                  a= Legal
-            .col-xs-3.aa-footer-col
-              .aa-footer-col-head= Community
-              ul.aa-footer-list
-                li
-                  a(href='/blog')= Blog //- Create Medium publication to serve as blog and add it to this. Consider getting custom URl from Medium for the website
-                li
-                  a(href='/blog')= Twitter
-                li
-                  a(href='https://www.linkedin.com/company/6840720')= LinkedIn
-            .col-xs-3.aa-footer-col
-              .aa-footer-col-head= Support
-              ul.aa-footer-list
-                li
-                  a(href='#')= Screen Sharing
-                li
-                  a(href='#')= Video Support
-                li
-                  a(href='#')= Support api
-            
+    .aa-body
+      nav.aa-header.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#hh-navbar-collapse', aria-expanded='false')
+              span.sr-only= Toggle navigation              
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')= AllCAD Consult 
+        .container-fluid
+          .row.aa-body
+            .col-md-10.col-md-offset-1
+              block content
+          .row.aa-footer
+            .col-md-10.col-md-offset-1
+              .col-xs-3.aa-footer-col
+                .aa-footer-logo
+                  img(src='')
+                p.aa-copyright= 
+              .col-xs-3.aa-footer-col
+                .aa-footer-col-head= Company
+                ul.aa-footer-list
+                  li
+                    a= Press
+                  li
+                    a= Contact
+                  li
+                    a= Legal
+              .col-xs-3.aa-footer-col
+                .aa-footer-col-head= Community
+                ul.aa-footer-list
+                  li
+                    a(href='/blog')= Blog //- Create Medium publication to serve as blog and add it to this. Consider getting custom URl from Medium for the website
+                  li
+                    a(href='/blog')= Twitter
+                  li
+                    a(href='https://www.linkedin.com/company/6840720')= LinkedIn
+              .col-xs-3.aa-footer-col
+                .aa-footer-col-head= Support
+                ul.aa-footer-list
+                  li
+                    a(href='#')= Screen Sharing
+                  li
+                    a(href='#')= Video Support
+                  li
+                    a(href='#')= Support api
+              
 
         
