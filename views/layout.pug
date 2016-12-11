@@ -1,7 +1,6 @@
 doctype html
 html(lang='en')
   head
-    title AllCAD
     link(rel='stylesheet', href='/stylesheets/layout.css')
     //- Bootstrap Stuff
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
@@ -9,8 +8,7 @@ html(lang='en')
     //-----------------
     block head
     //-----------------
-  body
-    .aa-body
+  body.aa-body
       nav.aa-header.navbar.navbar-default
         .container-fluid
           .navbar-header
@@ -23,47 +21,47 @@ html(lang='en')
             a.navbar-brand(href='#')
               | AllCAD Consult
           #aa-navbar-collapse.collapse.navbar-collapse
-        .container-fluid
-          .row.aa-body
-            .col-md-10.col-md-offset-1
-              //-----------------
-              block content
-              //-----------------
-          .row.aa-footer
-            .col-md-10.col-md-offset-1
-              .col-xs-3.aa-footer-col
-                .aa-footer-logo
-                  img(src='#')
-                p.aa-copyright 
-              .col-xs-3.aa-footer-col
-                .aa-footer-col-head 
-                  | Company
-                ul.aa-footer-list
-                  li
-                    a(href='#') Press
-                  li
-                    a(href='#') Contact
-                  li
-                    a(href='#') Legal
-              .col-xs-3.aa-footer-col
-                .aa-footer-col-head Community
-                ul.aa-footer-list
-                  li
-                    //- Create Medium publication to serve as blog and add it to this. Consider getting custom URl for Medium from hosting service
-                    a(href='medium.com') Blog 
-                  li
-                    a(href='https://twitter.com/ayoaderele') Twitter
-                  li
-                    a(href='https://www.linkedin.com/company/6840720') LinkedIn
-              .col-xs-3.aa-footer-col
-                .aa-footer-col-head Support
-                ul.aa-footer-list
-                  li
-                    a(href='#') Screen Sharing
-                  li
-                    a(href='#') Video Support
-                  li
-                    a(href='#') Support API
+      .container-fluid
+        .row.aa-body
+          .col-md-10.col-md-offset-1
+            //-----------------
+            block content
+            //-----------------
+        .row.aa-footer
+          .col-md-10.col-md-offset-1
+            .col-xs-3.aa-footer-col
+              .aa-footer-logo
+                img(src='#',alt='AllCAD Logo')
+              p.aa-copyright 
+            .col-xs-3.aa-footer-col
+              b.aa-footer-col-head
+                | Company
+              ul.aa-footer-list
+                li
+                  a(href='#') Press
+                li
+                  a(href='#') Contact
+                li
+                  a(href='#') Legal
+            .col-xs-3.aa-footer-col
+              b.aa-footer-col-head Community
+              ul.aa-footer-list
+                li
+                  //- Create Medium publication to serve as blog and add it to this. Consider getting custom URl for Medium from hosting service
+                  a(href='https://medium.com/') Blog 
+                li
+                  a(href='https://twitter.com/ayoaderele') Twitter
+                li
+                  a(href='https://www.linkedin.com/company/6840720') LinkedIn
+            .col-xs-3.aa-footer-col
+              b.aa-footer-col-head Support
+              ul.aa-footer-list
+                li
+                  a(href='#') Screen Sharing
+                li
+                  a(href='#') Video Support
+                li
+                  a(href='#') Support API
               
 
         

@@ -1,11 +1,28 @@
 .aa-body {
-  padding: 5px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(1, 63, 66); /* #013f42 */
+  border-color: rgb(1, 63, 66) !important;
+  color: white;
+  border-radius: 0px !important;
 }
 
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+.aa-header {
+   background-color: transparent !important;
+   border-color: transparent !important;
+   color: white !important;
+}
+
+.aa-bd-sectn{
+  height: 150px;
+}
+
+.aa-footer{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Index stuff */
+.aa-jbt{
+  background-color: transparent !important;
 }
