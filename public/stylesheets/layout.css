@@ -5,24 +5,60 @@
   border-color: rgb(1, 63, 66) !important;
   color: white;
   border-radius: 0px !important;
+  background-image: url('/images/background_pattern.svg');
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .aa-header {
    background-color: transparent !important;
    border-color: transparent !important;
-   color: white !important;
+   color: #f8f8f8 !important;
 }
 
 .aa-bd-sectn{
+  padding: 10px;
   height: 150px;
 }
 
 .aa-footer{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding:5%;
+  color: #ccc;
 }
+
+.aa-footer-col-head{
+  font-size: 18px;
+}
+
+.aa-footer-list{
+  list-style: none;
+  list-style-type: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.aa-footer-list li{
+  padding: 3px;
+}
+
+.aa-footer-list li a{
+  color: inherit;
+}
+
+.aa-icon{
+  margin-right: 8px;
+}
+
 
 /* Index stuff */
 .aa-jbt{
   background-color: transparent !important;
+  height: 50%;
 }
+
+/* Background SVG color: rgb(2, 97, 100) */
