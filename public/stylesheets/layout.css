@@ -4,11 +4,9 @@
   font-family: 'Open Sans', sans-serif; /* From fonts.google.com*/
   background-color: rgb(1, 63, 66); /* #013f42 */
   border-color: rgb(1, 63, 66) !important;
-  color: white;
+  color: #f8f8f8;
   border-radius: 0px !important;
-  background-image: url('/images/background_pattern_tiled.svg');
-  background-position: left bottom;
-  background-repeat: repeat-x;
+  
 }
 
 a{
@@ -23,12 +21,15 @@ a{
 }
 
 .aa-bd-sectn{
-  padding: 10px;
+  padding: 20px;
 }
 
 .aa-footer{
   padding:5%;
   color: #ccc;
+  background-image: url('/images/background_pattern_tiled.svg');
+  background-position-y: 100%;
+  background-repeat: repeat-x;
 }
 
 .aa-footer-logo p{
