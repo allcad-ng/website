@@ -2,10 +2,12 @@ doctype html
 html(lang='en')
   head
     link(rel='stylesheet', href='/stylesheets/layout.css')
-    script(src="https://code.jquery.com/jquery-3.1.1.js", integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=", crossorigin="anonymous")
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    script(src='https://code.jquery.com/jquery-3.1.1.js', integrity='sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=', crossorigin='anonymous')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
     script(src='https://use.fontawesome.com/c17e39b34b.js')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext', rel='stylesheet')
+    <link >
     //-----------------
     block head
     //-----------------
@@ -30,11 +32,12 @@ html(lang='en')
             //-----------------
         .row.aa-footer
           .col-md-10.col-md-offset-1
-            .col-xs-3.aa-footer-col
+            .col-xs-12.col-sm-3.col-md-3.aa-footer-col
               .aa-footer-logo
                 img(src='#',alt='AllCAD Logo')
+                p &copy; AllCAD Consult Limited 2016
               p.aa-copyright 
-            .col-xs-3.aa-footer-col
+            .col-xs-12.col-sm-3.col-md-3.aa-footer-col
               b.aa-footer-col-head
                 | Company
               ul.aa-footer-list
@@ -44,7 +47,7 @@ html(lang='en')
                   a(href='#') Contact
                 li
                   a(href='#') Legal
-            .col-xs-3.aa-footer-col
+            .col-xs-12.col-sm-3.col-md-3.aa-footer-col
               b.aa-footer-col-head Community
               ul.aa-footer-list
                 li
@@ -60,7 +63,7 @@ html(lang='en')
                   a(href='https://www.linkedin.com/company/6840720')
                     i.aa-icon.fa.fa-linkedin
                     | LinkedIn 
-            .col-xs-3.aa-footer-col
+            .col-xs-12.col-sm-3.col-md-3.aa-footer-col
               b.aa-footer-col-head Support
               ul.aa-footer-list
                 li

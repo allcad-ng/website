@@ -1,11 +1,12 @@
 .aa-body {
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  font-family: 'Open Sans', sans-serif; /* From fonts.google.com*/
   background-color: rgb(1, 63, 66); /* #013f42 */
   border-color: rgb(1, 63, 66) !important;
   color: white;
   border-radius: 0px !important;
-  background-image: url('/images/background_pattern.svg');
+  background-image: url('/images/background_pattern_tiled.svg');
   background-position: left bottom;
   background-repeat: repeat-x;
 }
@@ -23,12 +24,16 @@ a{
 
 .aa-bd-sectn{
   padding: 10px;
-  height: 150px;
 }
 
 .aa-footer{
   padding:5%;
   color: #ccc;
+}
+
+.aa-footer-logo p{
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .aa-footer-col-head{
@@ -62,3 +67,14 @@ a{
 }
 
 /* Background SVG color: rgb(2, 97, 100) */
+
+/*** HIGHLIGHTING ***/
+::selection { background-color: teal; color: #000; }
+
+::-moz-selection { background-color: teal; color: #000; }
+
+::-o-selection { background-color: teal; color: #000; }
+
+::-ms-selection { background-color: teal; color: #000; }
+
+::-webkit-selection { background-color: teal; color: #000; }
