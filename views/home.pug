@@ -2,19 +2,26 @@ extends layout
 
 block head
   title #{title}
+  link(rel='stylesheet', href='/stylesheets/home.css')
 
 block content
-  .jumbotron.aa-jbt
+
+  .aa-buffer-1
+
+  .jumbotron.aa-jbt    
     h1.aa-jbt-header
       | Graphical Information Technology Solutions
     h2.aa-jbt-subheader
       | AllCAD helps you build infrastructure with absolute confidence based on accurate data
+    img(src='/images/jumbotron_1.svg', alt='Jumbotron Background')
+
+  .aa-buffer-1.col-md-12
 
   .col-md-4.col-xs-12.aa-bd-sectn
     img(src="", alt="Measure Image")
     h2 Measure
     p
-      | New factory will be delayed ; design won’t fit into the site.
+      | New factory will be delayed; design won’t fit into the site.
       | Some cell sites have signal reception problems, caused by wrong locations. 
       | Using outdated navigation charts a ship has run aground. 
       | Our Rapid, Accurate, Mapping &amp; Positioning Services help prevent such costly nightmare scenarios. 
@@ -42,3 +49,30 @@ block content
       | understanding needed to utilise corporate infrastructure optimally. We deliver ARCHIBUS® based 
       | Computer Aided Facilities Management Solutions that help our customers connect the dots to see the 
       | big picture about the infrastructure investments on which their businesses depend.
+
+  .aa-buffer-1.col-md-12
+
+  .aa-bd-testimonies.col-md-12
+      h3 See what our customers are saying
+      .col-md-3.col-xs-12
+        h4 
+          i "AllCAD's services blah blah blah blah blah lorem ipsum dolor sit amet. Yada yada yada et cetera"
+        p
+          | - Mr Lagbaja
+      .col-md-3.col-xs-12
+        h4 
+          i "This company is blah blah blah blah blah lorem ipsum dolor sit amet. Yada yada yada et cetera"
+        p
+          | - Shokoloko Bangose
+      .col-md-3.col-xs-12
+        h4 
+          i "is blah blah blah blah blah lorem ipsum dolor sit amet. Yada yada yada et cetera"
+        p
+          | - Ijapa McTurtle
+      .col-md-3.col-xs-12
+        h4 
+          i "Great Company, big business, much tech. Wow! #MakeArchitectureGreatAgain"
+        p
+          | - Donald Drumpf
+
+  .aa-buffer-2.col-md-12

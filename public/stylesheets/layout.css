@@ -6,7 +6,6 @@
   border-color: rgb(1, 63, 66) !important;
   color: #f8f8f8;
   border-radius: 0px !important;
-  
 }
 
 a{
@@ -15,9 +14,16 @@ a{
 }
 
 .aa-header {
-   background-color: transparent !important;
-   border-color: transparent !important;
-   color: #f8f8f8 !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #f8f8f8 !important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.aa-header-items{
+  font-size: 20px;
+  color: white !important;
 }
 
 .aa-bd-sectn{
@@ -25,7 +31,12 @@ a{
 }
 
 .aa-footer{
-  padding:5%;
+  padding: 3%;
+  /*
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: auto;
+  */
   color: #ccc;
   background-image: url('/images/background_pattern_tiled.svg');
   background-position-y: 100%;
@@ -62,10 +73,7 @@ a{
 
 
 /* Index stuff */
-.aa-jbt{
-  background-color: transparent !important;
-  height: 50%;
-}
+
 
 /* Background SVG color: rgb(2, 97, 100) */
 

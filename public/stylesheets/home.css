@@ -1,0 +1,47 @@
+
+.aa-jbt{
+  background-color: transparent !important;
+  height: 500px !important;
+  background-image: url('/images/jumbotron_1.svg');
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right;
+  padding-top: 100px;
+  z-index: 2;
+}
+
+
+.aa-jbt img{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 500px;
+    opacity: 0.6;
+    transform: rotate(10deg);
+    margin-left: 35%;
+}
+
+
+.aa-bd-testimonies h3{
+    text-align: center;
+}
+
+.aa-bd-testimonies .col-md-3 h4{
+    text-align: center;
+    color: rgba(225,225,225,0.7);
+}
+
+.aa-bd-testimonies .col-md-3 p{
+    color: rgba(225,225,225,0.9);
+}
+
+.aa-buffer-1{
+    height: 50px;
+}
+
+.aa-buffer-2{
+    height: 100px;
+}
+
