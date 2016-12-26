@@ -5,6 +5,7 @@ function Title(x){ return x + ' | AllCAD' };
 var base_title = ' | AllCAD'
 var pages = {           /*   Titles   */            /*   URLs   */            /*   Template Names   */
   "home":               {"title":'Home',            "url":'/',                "template":'home'},
+  "contact":            {"title":'Contact',         "url":'/contact',         "template":'contact'},
   "about":              {"title":'About',           "url":'/about',           "template":'about'},
   "training_suites":    {"title":'Training Suites', "url":'/training-suites', "template":'training_suites'},
   "bridge":             {"title":'Bridge',          "url":'/bridge',          "template":'bridge'},

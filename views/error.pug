@@ -1,6 +1,9 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .aa-error-page
+    h1
+      | We couldn't find the page you're looking for
+    h4
+      | You could start off by visiting our 
+      a(href='/') home page
