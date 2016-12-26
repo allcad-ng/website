@@ -1,10 +1,17 @@
+:root{
+  --bg-color: rgb(1, 63, 66);
+  --text-color: #f8f8f8;
+  --text-color-2: #ccc;
+
+}
+
 .aa-body {
   padding: 0px;
   /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
   font-family: 'Open Sans', sans-serif; /* From fonts.google.com*/
-  background-color: rgb(1, 63, 66); /* #013f42 */
-  border-color: rgb(1, 63, 66) !important;
-  color: #f8f8f8;
+  background-color: var(--bg-color); /* #013f42 */
+  border-color: var(--bg-color) !important;
+  color: var(--text-color);
   border-radius: 0px !important;
 }
 
@@ -16,14 +23,23 @@ a{
 .aa-header {
   background-color: transparent !important;
   border-color: transparent !important;
-  color: #f8f8f8 !important;
+  color: var(--text-color) !important;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .aa-header-items{
   font-size: 20px;
-  color: white !important;
+  color: var(--text-color) !important;
+}
+
+.aa-header-items ul li a{
+  color: var(--text-color) !important;
+}
+
+.aa-header-items ul li a:hover {
+  color: var(--text-color-2) !important;
+  text-decoration: underline;
 }
 
 .aa-bd-sectn{
@@ -37,7 +53,7 @@ a{
   padding-right: auto;
   padding-bottom: auto;
   */
-  color: #ccc;
+  color: var(--text-color-2);
   background-image: url('/images/background_pattern_tiled.svg');
   background-position-y: 100%;
   background-repeat: repeat-x;

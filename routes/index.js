@@ -12,11 +12,6 @@ var pages = {           /*   Titles   */            /*   URLs   */            /*
   "jobs":               {"title":'Jobs',            "url":'/jobs',            "template":'jobs'},
 }
 
-/* GET Home Page */
-router.get('/', function(req, res, next) {
-  res.render('home', { title: Title('Home') });
-});
-
 /* GET main pages */
 router.get('/:pg_str', function(req, res, next) {
   var pg_str = req.params['pg_str'];
