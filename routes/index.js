@@ -13,13 +13,19 @@ var pages = {           /*   Titles   */            /*   URLs   */            /*
   "jobs":               {"title":'Jobs',            "url":'/jobs',            "template":'jobs'},
 }
 
+router.get('/', function(req, res, next) {
+  res.render('home', { title: Title('Home') });
+});
+
 /* GET main pages */
 router.get('/:pg_str', function(req, res, next) {
   var pg_str = req.params['pg_str'];
   if(pages[pg_str]){
     res.render(pages[pg_str].template, { title: Title(pages[pg_str].title) });
+  }else if( !pg_str ){
+    res.render('home', { title: Title('Home') });    
   }else{
-    res.render('error', { title: Title('Page Not Found') });
+    res.render('error', { title: Title('Page Not Found') }); 
   }
 });
 
