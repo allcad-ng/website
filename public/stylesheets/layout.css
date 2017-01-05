@@ -2,6 +2,7 @@
   --bg-color: rgb(1, 63, 66);
   --text-color: #f8f8f8;
   --text-color-2: #ccc;
+  --text-color-2-rgba: 
 
 }
 
@@ -20,6 +21,10 @@ a{
   color: inherit;
 }
 
+.aa-logo{
+  width: 80px !important;
+}
+
 .aa-header {
   background-color: transparent !important;
   border-color: transparent !important;
@@ -35,6 +40,11 @@ a{
 
 .aa-header-items ul li a{
   color: var(--text-color) !important;
+  padding-top: 30px;
+}
+
+.navbar-header button{
+  margin-top: 30px;
 }
 
 .aa-header-items ul li a:hover {
@@ -48,15 +58,10 @@ a{
 
 .aa-footer{
   padding: 3%;
-  /*
-  padding-left: auto;
-  padding-right: auto;
-  padding-bottom: auto;
-  */
   color: var(--text-color-2);
   background-image: url('/images/background_pattern_tiled.svg');
   background-position-y: 100%;
-  background-repeat: repeat-x;
+  background-repeat: round space;
 }
 
 .aa-footer-logo p{
@@ -68,8 +73,10 @@ a{
 
 .aa-footer-logo p a{
   color: inherit !important;
-  
 }
+
+/*.aa-footer-logo img{
+}*/
 
 .aa-footer-col-head{
   font-size: 18px;
@@ -108,7 +115,7 @@ a{
 /* Index stuff */
 
 
-/* Background SVG color: rgb(2, 97, 100) */
+/* Background SVG color: rgb(2, 97, 100) or #026164 */
 
 /*** HIGHLIGHTING ***/
 ::selection { background-color: teal; color: #000; }
