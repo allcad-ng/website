@@ -1,16 +1,30 @@
 
 .aa-jbt{
   background-color: transparent !important;
-  height: 500px !important;
-  background-image: url('/images/jumbotron_1.svg');
-  background-size: 1000px;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: right;
+  height: 500px !important;  
   padding-top: 100px;
   z-index: 2;
 }
 
+.aa-jbt:before{
+  background-color: transparent !important;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right;
+  background-image: url('/images/jumbotron_1.svg');
+  opacity: 0.6;
+}
+
+.aa-jbt::before{
+  background-color: transparent !important;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right;
+  background-image: url('/images/jumbotron_1.svg');
+  opacity: 0.6;
+}
 
 .aa-jbt img{
     display: none;

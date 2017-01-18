@@ -11,6 +11,7 @@ var pages = {           /*   Titles   */            /*   URLs   */            /*
   "bridge":             {"title":'Bridge',          "url":'/bridge',          "template":'bridge'},
   "vault":              {"title":'Vault',           "url":'/vault',           "template":'vault'},
   "jobs":               {"title":'Jobs',            "url":'/jobs',            "template":'jobs'},
+  "press":              {"title":'Press',           "url":'/press',           "template":'press'},
 }
 
 router.get('/', function(req, res, next) {
