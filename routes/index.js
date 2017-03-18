@@ -1,4 +1,5 @@
 var express = require('express');
+var Feed = require('rss-to-json');
 var router = express.Router();
 
 function Title(x){ return x + ' | AllCAD' };
@@ -15,7 +16,15 @@ var pages = {           /*   Titles   */            /*   URLs   */            /*
 }
 
 router.get('/', function(req, res, next) {
-  res.render('home', { title: Title('Home') });
+  var blog = {};
+  var BLOG_FEED_URL = "https://medium.com/feed/@Akinzwill";
+  var blog_url = "https://medium.com/@Akinzwill";
+  Feed.load(BLOG_FEED_URL, function(err, rss){
+    blog = res; //.slice(0,5);
+  });
+  // TODO: Start creating tests, the first one will test that this method of retrieving blog posts still works
+
+  res.render('home', { "title": Title('Home'), "blog": blog });
 });
 
 /* GET main pages */
@@ -23,10 +32,8 @@ router.get('/:pg_str', function(req, res, next) {
   var pg_str = req.params['pg_str'];
   if(pages[pg_str]){
     res.render(pages[pg_str].template, { title: Title(pages[pg_str].title) });
-  }else if( !pg_str ){
-    res.render('home', { title: Title('Home') });    
   }else{
-    res.render('error', { title: Title('Page Not Found') }); 
+    res.render('error', { title: Title('Page Not Found') });
   }
 });
 

@@ -12,31 +12,34 @@ html(lang='en')
     block head
     //-----------------
   body.aa-body
-      nav.aa-header.navbar.navbar-default
+      header
+        nav.aa-header.navbar.navbar-default
+          .container-fluid
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#aa-navbar-collapse', aria-expanded='false')
+                span.sr-only
+                  | Toggle navigation              
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a(href='/').navbar-brand
+                img(src='/images/logo.svg', width='80').aa-logo
+            .aa-header-items.collapse.navbar-collapse
+              ul.nav.navbar-nav.navbar-right.aa-nav
+                li
+                  a(href='/about') About
+                li
+                  a(href='#') Training
+                li
+                  a(href='#') 
+      main
         .container-fluid
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#aa-navbar-collapse', aria-expanded='false')
-              span.sr-only
-                | Toggle navigation              
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/').navbar-brand
-              img(src='/images/logo.svg', width='80').aa-logo
-          .aa-header-items.collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right.aa-nav
-              li
-                a(href='/about') About
-              li
-                a(href='#') Training
-              li
-                a(href='#') 
-      .container-fluid
-        .row.aa-body
-          .col-md-10.col-md-offset-1
-            //-----------------
-            block content
-            //-----------------
+          .row.aa-body
+            .col-md-10.col-md-offset-1
+              //-----------------
+              block content
+              //-----------------
+      footer
         .row.aa-footer
           .col-md-10.col-md-offset-1
             .col-xs-12.col-sm-3.col-md-3.aa-footer-col
