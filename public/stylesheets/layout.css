@@ -60,22 +60,23 @@ a{
   padding: 20px;
 }
 
+
+.aa-footer{
+	padding: 3%;
+	color: var(--text-color-2);
+	background-image: url('/images/background_pattern_tiled.svg');
+}
+
 @media screen and  (min-width: 768px) and (min-width: 992px){
   .aa-footer{
-    padding: 3%;
-    color: var(--text-color-2);
-    background-image: url('/images/background_pattern_tiled.svg');
     background-position-y: 100%;
-    background-repeat: round space;
+    background-repeat: repeat-x;
   }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 768px){
   .aa-footer{
-    padding: 3%;
-    color: var(--text-color-2);
-    background-image: url('/images/background_pattern_tiled.svg');
-    background-repeat: repeat-y;
+    background-repeat: repeat;
   }
 }
 
