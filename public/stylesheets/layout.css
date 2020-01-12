@@ -64,7 +64,7 @@ a{
 .aa-footer{
 	padding: 3%;
 	color: var(--text-color-2);
-	background-image: url('/images/background_pattern_tiled.svg');
+	background-image: url('./images/background_pattern_tiled.svg');
 }
 
 @media screen and  (min-width: 768px) and (min-width: 992px){
